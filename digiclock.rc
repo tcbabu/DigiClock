@@ -1,0 +1,39 @@
+D      //GUI dimensions xo,yo,xl,yl,lw,rw,tw,bw,df,bor_type,bkup
+788 210 323 160
+4 4 4 4
+2 0 1 1 1 0 0 0 0 0 0 1 1.000000 0 100 100 0
+//Message Box
+m
+m     //code
+6 99  //x1,y1
+"DigiClock"/Message
+319 134 //x2,y2
+0 0 //justification,hide
+"DateBox"
+//Message Box
+m
+m     //code
+6 7  //x1,y1
+""/Message
+319 102 //x2,y2
+0 0 //justification,hide
+"TimeBox"
+//Horiz bar
+h
+h     //code
+149 135  //x1,y1
+169 153  //x2,y2
+2 0  //xgap,ygap
+10 //length 
+10 //Width 
+1 1  //Nx,Ny,
+1 //status
+"" //title 
+/usr/share/icons/shutdown(1).png // XPM 
+NULL // XPM 
+NULL // XPM 
+-147000000 //back ground color
+ //keyboard code
+4 0.500000 0  //type,fac
+0 0 //hide
+"digiclockWidget3"
