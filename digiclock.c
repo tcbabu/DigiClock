@@ -2,6 +2,7 @@
 #include "digiclockCallbacks.h"
 #include "Gclrdigiclock.c"
 
+
 int digiclockGroup( DIALOG *D,void **v,void *pt) {
   int GrpId=0,oitems=0,i,j;
   DIA *d=NULL,*dtmp;
@@ -30,18 +31,12 @@ int digiclockGroup( DIALOG *D,void **v,void *pt) {
   butn2[0].xpmn=NULL;
   butn2[0].xpmp=NULL;
   butn2[0].xpmh=NULL;
-#if 1
-  butn2[0].xpmn= (char *)malloc(100); 
-  strcpy(butn2[0].xpmn,(char *)"##/usr/share/icons/shutdown(1).png");
-#else
-  butn2[0].xpmn= kgGetProcessedImage("##/usr/share/icons/shutdown(1).png",10,0.8,0,0,0);
-#endif
   butn2[0].bkgr=-147000000;
-  butn2[0].butncode=31;
+  butn2[0].butncode=10;
   DIL h2 = { 
     'h',
-    149,135,  
-    169,153,
+    145,130,  
+    165,148,
     2,0,  
     10, 
     10, 
@@ -77,6 +72,7 @@ int digiclockGroup( DIALOG *D,void **v,void *pt) {
   while(d[j].t!=NULL){ kgAddtoGrp(D,GrpId,(void *)(d[j].t));j++;}
   return GrpId;
 } 
+
 /* One can also use the following code to add Widgets to an existing Dialog */
 
 int MakedigiclockGroup(DIALOG *D,void *arg) {

@@ -21,15 +21,15 @@ m     //code
 //Horiz bar
 h
 h     //code
-149 135  //x1,y1
-169 153  //x2,y2
+145 130  //x1,y1
+165 148  //x2,y2
 2 0  //xgap,ygap
 10 //length 
 10 //Width 
 1 1  //Nx,Ny,
 1 //status
 "" //title 
-/usr/share/icons/shutdown(1).png // XPM 
+NULL // XPM 
 NULL // XPM 
 NULL // XPM 
 -147000000 //back ground color
