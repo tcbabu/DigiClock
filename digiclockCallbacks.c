@@ -127,7 +127,7 @@ int digiclockWaitCallBack(void *Tmp) {
           if ( ndate != odate ) {
               odate = ndate;
               sprintf ( buff , "!h43!w52%d   %-s" , dt-> tm_year+1900 , months [ dt-> tm_mon ] ) ;
-              sprintf ( buff1 , "%d %-s" , dt-> tm_mday , days [ dt-> tm_wday ] ) ;
+              sprintf ( buff1 , " %d %-s" , dt-> tm_mday , days [ dt-> tm_wday ] ) ;
 	      strcat(buff,buff1);
               kgWrite ( msg , buff ) ;
           }
