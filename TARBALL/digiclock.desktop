@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=/usr/bin/digiclock
+X-DCOP-ServiceType=wait
+Name=Digital Clock
+Comment=Desktop Clock
+Keywords=calculation;
+Type=Application
+Icon=/usr/share/digiclock/digiclock.png
+Terminal=false
+StartupNotify=false
+Categories=Accessories;Utility;Clock;
+X-KDE-autostart-phase=1

@@ -11,6 +11,15 @@ digiclockmain.o	: digiclockmain.c
 	 $(CC) -c digiclockmain.c
 
 install		: digiclock
-		  cp digiclock /usr/bin/
+		  install -m 755  digiclock /usr/bin/
+		  mkdir -p /usr/share/digiclock
+		  install -m 644  TARBALL/clock.png /usr/share/digiclock/clock.png
+		  install -m 644  TARBALL/digiclock.desktop /usr/share/applications
+tarball		: digiclock
+		  cp digiclock TARBALL/
+		  mv TARBALL DigiClock
+		  tar czvf digiclockbin.tgz DigiClock
+		  mv DigiClock TARBALL
+		  rm TARBALL/digiclock
 clean	:  
 	   rm -f *.o digiclock
